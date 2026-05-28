@@ -155,6 +155,11 @@ li {
   text-decoration: underline;
 }
 
+.paper-meta {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
 .paper-abstract {
   font-size: 0.92rem;
   color: var(--muted);
