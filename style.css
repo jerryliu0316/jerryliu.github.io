@@ -1,0 +1,206 @@
+/* ===== Reset & Base ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --text: #222;
+  --muted: #555;
+  --accent: #003d6b;
+  --link: #1a6daa;
+  --bg: #fff;
+  --max-width: 680px;
+}
+
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Palatino", "Palatino Linotype", "Georgia", "Times New Roman", serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+
+.affiliation {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.affiliation a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.affiliation a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Navigation ===== */
+nav {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--link);
+  text-decoration: none;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Sections ===== */
+section {
+  margin-bottom: 2.5rem;
+  padding-top: 0.5rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #eee;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ===== Lists ===== */
+ul,
+ol {
+  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Papers ===== */
+.paper-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.paper-list > li {
+  margin-bottom: 1.5rem;
+}
+
+.paper-title {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.paper-status {
+  font-weight: 400;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.paper-links {
+  font-size: 0.92rem;
+  margin-bottom: 0.4rem;
+}
+
+.paper-links a {
+  color: var(--link);
+  text-decoration: none;
+  margin-right: 0.8rem;
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
+}
+
+.paper-abstract {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+/* ===== CV Link ===== */
+.cv-link {
+  display: inline-block;
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cv-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+footer a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-note {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 520px) {
+  html { font-size: 15px; }
+  body { padding: 2rem 1rem 3rem; }
+  header h1 { font-size: 1.8rem; }
+  nav { gap: 1rem; }
+}
